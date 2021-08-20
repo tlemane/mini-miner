@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.13.0)
-project(cpp-app VERSION 0.0.1 LANGUAGES C CXX) #TODO
+project(mini-miner VERSION 0.0.1 LANGUAGES C CXX)
 
-set(PROJECT_DESCRIPTION "cpp-app description") #TODO
+set(PROJECT_DESCRIPTION "")
 
-set(LIBRARY_NAME "cpp-app-lib") #TODO
+set(LIBRARY_NAME "minilib")
 
 option(STATIC_BUILD "Static build." OFF)
 option(DEV_BUILD "Dev build." OFF)
 option(BUILD_SHARED_LIBS "Build shared library" OFF)
 
-option(WITH_TESTS "Compile tests." ON)
+option(WITH_TESTS "Compile tests." OFF)
 option(WITH_DOC "" ON)
 option(WITH_CPPCHECK "" ON)
 option(WITH_CLANGFORMAT "" ON)
@@ -29,7 +29,7 @@ if (STATIC_BUILD AND NOT APPLE)
 endif()
 
 if (DEV_MODE)
-  add_definitions(-D${CPP_APP_DEV_MODE}) #TODO
+  add_definitions(-D${MINI_MINER_DEV_MODE})
 endif()
 
 set(CMAKE_CXX_STANDARD 17)
@@ -42,7 +42,7 @@ set(CMAKE_CXX_FLAGS_COVERAGE "${CMAKE_CXX_FLAGS} -O0 -g --coverage")
 
 add_subdirectory(thirdparty)
 get_sha1(${PROJECT_SOURCE_DIR} GIT_SHA1)
-configure_file_helper("${PROJECT_SOURCE_DIR}/lib/include/config.hpp.in" ${PROJECT_BINARY_DIR}/include/cpp-app-lib) #TODO
+configure_file_helper("${PROJECT_SOURCE_DIR}/lib/include/config.hpp.in" ${PROJECT_BINARY_DIR}/include/${LIBRARY_NAME})
 
 add_subdirectory(lib)
 

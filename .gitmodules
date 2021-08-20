@@ -4,3 +4,18 @@
 [submodule "thirdparty/spdlog"]
 	path = thirdparty/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "thirdparty/bcli"]
+	path = thirdparty/bcli
+	url = https://github.com/tlemane/bcli
+[submodule "thirdparty/kmercpp"]
+	path = thirdparty/kmercpp
+	url = https://github.com/tlemane/kmercpp
+[submodule "thirdparty/robin-hood-hashing"]
+	path = thirdparty/robin-hood-hashing
+	url = https://github.com/martinus/robin-hood-hashing
+[submodule "thirdparty/kseqpp"]
+	path = thirdparty/kseqpp
+	url = https://github.com/cartoonist/kseqpp
+[submodule "thirdparty/cpp-HyperLogLog"]
+	path = thirdparty/cpp-HyperLogLog
+	url = https://github.com/hideo55/cpp-HyperLogLog

@@ -1,11 +1,11 @@
-{% set version = "0.0.0" %} #TODO
+{% set version = "0.0.0" %}
 
 package:
   name: cpp-app
   version: {{ version }}
 
 source:
-  git_url: https://github.com/tlemane/cpp-app-template #TODO
+  git_url: https://github.com/tlemane/mini-miner
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
 #   -
 
 about:
-  home: https://github.com/tlemane/cpp-app-template #TODO
+  home: https://github.com/tlemane/mini-miner
   license: AGPL-3.0
-  dev_url: https://github.com/tlemane/cpp-app-template #TODO
-  doc_url: https://github.com/tlemane/cpp-app-template #TODO
+  dev_url: https://github.com/tlemane/mini-miner
+  doc_url: https://github.com/tlemane/mini-miner

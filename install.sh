@@ -20,7 +20,7 @@ function project_build ()
 
 function usage ()
 {
-  echo "cpp-app build script." #TODO
+  echo "mini-miner build script."
   echo "Usage: "
   echo "  ./install.sh [-r str] [-t int] [-j int] [-d] [-s]"
   echo "Options: "
